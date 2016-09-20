@@ -96,6 +96,11 @@ $(document).ready(function () {
           
           if (isGameOver($(this).index())) {
             message('Player ' + currentSymbol + ' wins!');
+            if (currentSymbol === 'X') {
+              incrementXValue();
+            } else if (currentSymbol === "O") {
+              incrementOValue();
+            }
             endgameFlag = true;
           } else {
             changePlayer();

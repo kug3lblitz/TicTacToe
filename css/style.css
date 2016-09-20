@@ -84,6 +84,7 @@ body {
   color: #666;
   font-family: Lato, Arial, sans-serif;
   font-size: 16px;
+  height: 1000px;
 }
 
 header {
@@ -168,17 +169,12 @@ div.other-field {
 /*scoreboard*/
 
 .scoreBoard {
-  display: inline-block; 
-  position: relative;
-  left: 21%;
+  display: flex; 
   margin: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.score {
-  display: inline;
+input {
+  margin-right: 10px;
 }
-
-.score {
-  display: inline;
-}
-
