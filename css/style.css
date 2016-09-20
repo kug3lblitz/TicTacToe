@@ -164,3 +164,21 @@ header .right-para:active {
 div.other-field {
   opacity: 0.5;
 }
+
+/*scoreboard*/
+
+.scoreBoard {
+  display: inline-block; 
+  position: relative;
+  left: 21%;
+  margin: 20px;
+}
+
+.score {
+  display: inline;
+}
+
+.score {
+  display: inline;
+}
+

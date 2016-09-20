@@ -117,3 +117,18 @@ $(document).ready(function () {
   
   TicTacToe.play();
 });
+
+function incrementXValue(){
+    var value = parseInt(document.getElementById('Xnumber').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('Xnumber').value = value;
+}
+
+function incrementOValue(){
+    var value = parseInt(document.getElementById('Onumber').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('Onumber').value = value;
+}
+
