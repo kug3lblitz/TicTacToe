@@ -85,6 +85,8 @@ body {
   font-family: Lato, Arial, sans-serif;
   font-size: 16px;
   height: 1000px;
+  background-image: url('../img/kit1.jpeg');
+  background-size: cover;
 }
 
 header {
@@ -92,6 +94,7 @@ header {
   margin: 0 auto 10px;
   max-width: 640px;
   padding: 20px;
+  background-color: white;
 }
 header p {
   display: inline-block;

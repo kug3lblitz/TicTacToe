@@ -81,6 +81,20 @@ $(document).ready(function () {
       currentSymbol = currentPlayer ? 'X' : 'O';
     };
     
+    function incrementXValue(){
+        var value = parseInt(document.getElementById('Xnumber').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('Xnumber').value = value;
+    }
+
+    function incrementOValue(){
+        var value = parseInt(document.getElementById('Onumber').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('Onumber').value = value;
+    }
+
     // INIT FUNCTION
     initialize = function () {
       newGame();
@@ -101,7 +115,10 @@ $(document).ready(function () {
             } else if (currentSymbol === "O") {
               incrementOValue();
             }
-            endgameFlag = true;
+             else if (currentSymbol !== "X" && currentSymbol !== "O") {
+              message('It\'s a tie!');
+              endgameFlag = true;
+            }
           } else {
             changePlayer();
           }
@@ -122,18 +139,4 @@ $(document).ready(function () {
   
   TicTacToe.play();
 });
-
-function incrementXValue(){
-    var value = parseInt(document.getElementById('Xnumber').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    document.getElementById('Xnumber').value = value;
-}
-
-function incrementOValue(){
-    var value = parseInt(document.getElementById('Onumber').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    document.getElementById('Onumber').value = value;
-}
 
