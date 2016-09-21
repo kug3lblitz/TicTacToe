@@ -90,11 +90,11 @@ body {
 }
 
 header {
-  border: 1px solid #ddd;
+  border-bottom: 1px solid black;
   margin: 0 auto 10px;
-  max-width: 640px;
   padding: 20px;
-  background-color: white;
+  background-color: rgba(187,187,187, 0.3);
+  width: 100%;
 }
 header p {
   display: inline-block;
@@ -132,6 +132,9 @@ header .right-para:active {
   margin: 0 auto;
   max-width: 360px;
   width: 100%;
+  opacity: 0.6;
+  position: relative;
+  top: 15%;
 }
 
 #fields > div {
@@ -180,4 +183,45 @@ div.other-field {
 
 input {
   margin-right: 10px;
+  background: transparent;
+  border: transparent;
+  color: white;
+  font-size: 1em;
 }
+
+/*additional styling*/
+
+.gradient {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(10, 10, 10, 0.9);
+}
+
+@media screen and (min-width: 699px) {
+  .xScore {
+    position: relative;
+  }
+
+  .oScore {
+    position: relative;
+  }
+}
+
+.xScore {
+  right: 15%;
+  top: 360px;
+  color: red;
+}
+
+.oScore {
+  left: 30%;
+  top: 360px;
+  color: lightgreen;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #292929;
+}
+

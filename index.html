@@ -8,21 +8,29 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <p class="left-p">---</p>
-      <p class="right-p">New Game</p>
-    </header>
 
-    <div class="scoreBoard">
-      <p class="score">X Score: <input type="text" id="Xnumber" value="0" readonly/></p>
-      <p class="score">O Score: <input type="text" id="Onumber" value="0" readonly/></p>
+    <div class="gradient">
+
+        <header>
+          <p class="left-p">---</p>
+          <p class="right-p">New Game</p>
+        </header>
+
+        <div class="scoreBoard">
+          <p class="score xScore">X Score: <input type="text" id="Xnumber" value="0" readonly/></p>
+          <p class="score oScore">O Score: <input type="text" id="Onumber" value="0" readonly/></p>
+        </div>
+
+        <section id="fields" class="clear">
+          <div></div><div></div><div></div>
+          <div></div><div></div><div></div>
+          <div></div><div></div><div></div>
+        </section>
+
     </div>
 
-    <section id="fields" class="clear">
-      <div></div><div></div><div></div>
-      <div></div><div></div><div></div>
-      <div></div><div></div><div></div>
-    </section>
+    <footer></footer>
+
      <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
   </body>

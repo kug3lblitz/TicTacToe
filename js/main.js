@@ -123,10 +123,7 @@ $(document).ready(function () {
             } else if (currentSymbol === "O") {
               incrementOValue();
             }
-             else if (currentSymbol !== "X" && currentSymbol !== "O") {
-              message('It\'s a tie!');
               endgameFlag = true;
-            }
           } else {
             changePlayer();
           }
