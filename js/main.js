@@ -23,7 +23,8 @@ $(document).ready(function () {
         newGame,
         render,
         resetBoard,
-        setSymbol;
+        setSymbol,
+        movesCount;
     
     changePlayer = function () {
       currentPlayer = currentPlayer ? 0 : 1;
@@ -65,6 +66,7 @@ $(document).ready(function () {
       resetBoard();
       drawPlayer();
       render();
+      movesCount = 0;
     };
     
     render = function () {
@@ -95,11 +97,17 @@ $(document).ready(function () {
         document.getElementById('Onumber').value = value;
     }
 
+    movesCount = 0;
+
     // INIT FUNCTION
     initialize = function () {
       newGame();
       
       $('#fields').on('click', 'div', function () {
+        movesCount = movesCount+1;
+        if (movesCount == 9) {
+          message('It\'s a tie!');
+        }
         if (this.innerHTML === " " && !endgameFlag) {
           this.innerHTML = currentSymbol;
           if (currentSymbol === 'X') {
