@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Catamaran:300,400,700';
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -101,7 +103,8 @@ header p {
   text-align: center;
 }
 header .left-p {
-  font-size: 18px;
+  font-size: 25px;
+  font-family: 'Catamaran', Helvetica, sans-serif;
   letter-spacing: 0.5px;
   width: 64%;
   color: red;
@@ -175,6 +178,8 @@ div.other-field {
 /*scoreboard*/
 
 .scoreBoard {
+  font-family: 'Catamaran', Helvetica, sans-serif;
+  font-size: 1.4em;
   display: flex; 
   margin: 20px;
   flex-wrap: wrap;
@@ -197,16 +202,6 @@ input {
   background-color: rgba(10, 10, 10, 0.9);
 }
 
-@media screen and (min-width: 699px) {
-  .xScore {
-    position: relative;
-  }
-
-  .oScore {
-    position: relative;
-  }
-}
-
 .xScore {
   right: 15%;
   top: 360px;
@@ -217,6 +212,24 @@ input {
   left: 30%;
   top: 360px;
   color: lightgreen;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  .xScore {
+    position: relative;
+    right: 4%;
+  }
+}
+
+@media screen and (min-width: 699px) {
+  .xScore {
+    position: relative;
+    right: 4%;
+  }
+
+  .oScore {
+    position: relative;
+  }
 }
 
 footer {

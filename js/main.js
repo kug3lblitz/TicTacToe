@@ -62,7 +62,7 @@ $(document).ready(function () {
     
     newGame = function () {
       endgameFlag = false;
-      message('---');
+      message('');
       resetBoard();
       drawPlayer();
       render();
@@ -105,7 +105,7 @@ $(document).ready(function () {
       
       $('#fields').on('click', 'div', function () {
         movesCount = movesCount+1;
-        if (movesCount == 9) {
+        if ( !endgameFlag && movesCount == 9) {
           message('It\'s a tie!');
         }
         if (this.innerHTML === " " && !endgameFlag) {
