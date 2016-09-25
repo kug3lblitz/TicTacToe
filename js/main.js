@@ -144,4 +144,3 @@ $(document).ready(function () {
   
   TicTacToe.play();
 });
-
